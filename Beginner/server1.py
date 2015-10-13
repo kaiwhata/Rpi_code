@@ -9,7 +9,7 @@ def homepage():
 
 #when you visit the website URL +/name/jimmy...
 @route('/name/<username>')
-def namepage():
+def namepage(username):
     #display the words "Hello " plus the name they typed in the URL i.e. jimmy
     return "Hello "+str(username)+"!"
 
